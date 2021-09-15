@@ -21,7 +21,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
+        url: "https://anilnewari.github.io/foodraj/php/form-process.php",
         data: "name=" + name + "&mobile=" + mobile + "&plan=" + plan + "&address=" + address,
         success : function(text){
             if (text == "success"){
