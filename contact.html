@@ -120,7 +120,9 @@
 							</div> -->
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="number" placeholder="Your Mobile Number" id="mobile" class="form-control"
+									<input type="number" placeholder="Your Mobile Number" id="mobile"
+										class="form-control" maxlength="10"
+										oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
 										name="name" required data-error="Please enter your mobile number">
 									<div class="help-block with-errors"></div>
 								</div>

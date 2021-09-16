@@ -18,17 +18,21 @@ function submitForm(){
     var plan = $("#plan").val();
     var address = $("#address").val();
 
+    if(mobile.length<10){
+        alert("Please enter 10 digit mobile number.");
+        return;
+    }
 
     $.ajax({
         type: "POST",
-        url: "https://anilnewari.github.io/foodraj/php/form-process.php",
+        url: "https://admin.qeedagame.com/api/foodraj/enquiry",
         data: "name=" + name + "&mobile=" + mobile + "&plan=" + plan + "&address=" + address,
         success : function(text){
             if (text == "success"){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false,"Something went wrong! Try again later.");
             }
         }
     });
