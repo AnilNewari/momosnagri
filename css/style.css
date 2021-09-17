@@ -379,6 +379,19 @@ button:focus {
     padding: 70px 0px;
 }
 
+.heading-title-form {
+    margin-bottom: 20px;
+}
+.heading-title-form h2 {
+    color: #010101;
+    font-size: 28px;
+    font-family: "Arbutus Slab", serif;
+}
+.heading-title-form p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0px;
+}
 .heading-title {
     margin-bottom: 50px;
 }
@@ -1304,7 +1317,7 @@ blockquote {
 }
 
 .contact-box {
-    padding: 70px 0px;
+    padding: 120px 0px; 
 }
 
 .map-full {
