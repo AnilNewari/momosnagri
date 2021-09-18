@@ -1,24 +1,25 @@
-$("#contactForm").validator().on("submit", function (event) {
-    if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-        formError();
-        submitMSG(false, "Did you fill in the form properly?");
-    } else {
-        // everything looks good!
-        event.preventDefault();
-        submitForm();
-    }
-});
+$("#contactForm")
+    .validator()
+    .on("submit", function (event) {
+        if (event.isDefaultPrevented()) {
+            // handle the invalid form...
+            formError();
+            submitMSG(false, "Did you fill in the form properly?");
+        } else {
+            // everything looks good!
+            event.preventDefault();
+            submitForm();
+        }
+    });
 
-
-function submitForm(){
+function submitForm() {
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var mobile = $("#mobile").val();
     var plan = $("#plan").val();
     var address = $("#address").val();
 
-    if(mobile.length<10){
+    if (mobile.length < 10) {
         alert("Please enter 10 digit mobile number.");
         return;
     }
@@ -27,30 +28,33 @@ function submitForm(){
         type: "POST",
         url: "https://admin.qeedagame.com/api/foodraj/enquiry",
         data: "name=" + name + "&mobile=" + mobile + "&plan=" + plan + "&address=" + address,
-        success : function(text){
-            if (text == "success"){
+        success: function (text) {
+            if (text == "success") {
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,"Something went wrong! Try again later.");
+                submitMSG(false, "Something went wrong! Try again later.");
             }
         }
     });
 }
 
-function formSuccess(){
+function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Your Enquiry Submitted!")
+    submitMSG(true, "Submitted successfully! Our representative will call you within 12 hours.");
 }
 
-function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $(this).removeClass();
-    });
+function formError() {
+    $("#contactForm")
+        .removeClass()
+        .addClass("shake animated")
+        .one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
+            $(this).removeClass();
+        });
 }
 
-function submitMSG(valid, msg){
-    if(valid){
+function submitMSG(valid, msg) {
+    if (valid) {
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";
