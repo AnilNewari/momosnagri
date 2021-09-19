@@ -352,7 +352,7 @@ button:focus {
 -------------------------------------------------------------------*/
 
 .qt-background {
-    background: url(../images/qt-bg.jpg) no-repeat;
+    background: url(../images/menu/scrollSlide1.jpg) no-repeat;
     background-size: cover;
     padding: 100px 0;
     background-attachment: fixed;
