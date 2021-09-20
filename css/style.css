@@ -352,7 +352,7 @@ button:focus {
 -------------------------------------------------------------------*/
 
 .qt-background {
-    background: url(../images/menu/scrollSlide1.jpg) no-repeat;
+    background: url(../images/fj-scroll.jpg) no-repeat;
     background-size: cover;
     padding: 100px 0;
     background-attachment: fixed;
@@ -383,6 +383,25 @@ button:focus {
     border: #cd542d;
     border-width: 2px;
     border-style: solid;
+
+}
+
+/*----------
+Owl carousel
+9e2928
+*/
+
+.owl-section{
+    margin-top: 66px;
+    background:  #9e2928;
+    padding: 20px;
+}
+
+.owl-section .item{
+    background-color: #cd542d;
+    border-radius: 8px;
+    height: 300px;
+    width: 150px;
 }
 
 /*------------------------------------------------------------------

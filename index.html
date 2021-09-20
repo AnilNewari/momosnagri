@@ -46,6 +46,9 @@
 		gtag('config', 'G-9WZM8DCFKK');
 	</script>
 
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -67,9 +70,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	
 
 </head>
-
 <body>
 	<!-- Start header -->
 	<header class="top-navbar">
@@ -112,10 +115,23 @@
 	<!-- End header -->
 
 	<!-- Start slides -->
-	<div id="slides" class="cover-slides">
+	<!-- <div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-center">
-				<img src="images/slider001.jpg" alt="">
+				<img src="images/slide0001.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Foodraj<br>The Taste of Rajasthan</strong></h1>
+							<p class="m-b-40">Order your healthy and best food anytime</p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="contact.html">Subscribe
+									Tiffin</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/slide0002.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -140,26 +156,24 @@
 					</div>
 				</div>
 			</li>
-			<li class="text-center">
-				<img src="images/slider003.jpg" alt="">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h1 class="m-b-20"><strong>Foodraj<br>The Taste of Rajasthan</strong></h1>
-							<p class="m-b-40">Order your healthy and best food anytime</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="contact.html">Subscribe
-									Tiffin</a></p>
-						</div>
-					</div>
-				</div>
-			</li>
 		</ul>
 		<!-- <div class="slides-navigation">
 			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
 		</div> -->
-	</div>
+	</div> -->
 	<!-- End slides -->
+
+	<div class="owl-carousel owl-theme owl-section">
+		<img class="item" src="./images/blog-img-01.jpg">
+		<img class="item" src="./images/blog-img-03.jpg">
+		<img class="item" src="./images/blog-img-04.jpg">
+		<img class="item" src="./images/blog-img-06.jpg">
+		<img class="item" src="./images/blog-img-07.jpg">
+		<img class="item" src="./images/blog-img-08.jpg">
+		<img class="item" src="./images/blog-img-09.jpg">		
+	</div>
+	
 
 	<!-- Start About -->
 	<!-- <div class="about-section-box">
@@ -248,8 +262,8 @@
 				<div class="col-lg-12">
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
-							<!-- <button class="active" data-filter="*">All</button> -->
-							<button class="active" data-filter=".sabji">Sabji</button>
+							<button class="active" data-filter="*">All</button>
+							<button data-filter=".sabji">Sabji</button>
 							<button data-filter=".dal">Dal</button>
 							<button data-filter=".roti">Roti & Chawal</button>
 							<button data-filter=".paratha">Paratha</button>
@@ -268,6 +282,11 @@
 							<h4>Matar Paneer</h4>
 							<h5>Half: ₹70</h5>
 							<h5>Full: ₹120</h5>
+							<div class="row" style="justify-content: space-evenly;">
+								<h5>Order On:</h5>
+								<h5><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order" target="_blank">Zomato</a> </h5>
+								<h5><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642" target="_blank">Swiggy</a> </h5>	
+							</div>
 						</div>
 					</div>
 				</div>
@@ -496,7 +515,7 @@
 					<div class="gallery-single fix">
 						<img src="images/menu/roti-butter.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Tawa Roti Butter</h4>
+							<h4>Tawa Butter Roti</h4>
 							<h5>₹8</h5>
 						</div>
 					</div>
@@ -514,7 +533,7 @@
 					<div class="gallery-single fix">
 						<img src="images/menu/simple-chawal.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Simple Chawal</h4>
+							<h4>Simple Rice</h4>
 							<h5>₹60</h5>
 						</div>
 					</div>
@@ -523,7 +542,7 @@
 					<div class="gallery-single fix">
 						<img src="images/menu/namkin-chawal.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Namkeen Chawal</h4>
+							<h4>Namkeen Rice</h4>
 							<h5>₹70</h5>
 						</div>
 					</div>
@@ -564,15 +583,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 special-grid lassi">
+				<!-- <div class="col-lg-4 col-md-6 special-grid lassi">
 					<div class="gallery-single fix">
 						<img src="images/menu/mango-lassi.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Mango Lassi</h4>
+							<h4>Mango Lassi(Out of Stock)</h4>
 							<h5>₹50</h5>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-lg-4 col-md-6 special-grid lassi">
 					<div class="gallery-single fix">
 						<img src="images/menu/bnana.jpg" class="img-fluid" alt="Image">
@@ -634,7 +653,7 @@
 						<img src="images/menu/puri-sabji.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
 							<h4>Puri Sabji</h4>
-							<p>8 puri+ aaloo chhole sabji+ achar+ chatuney salad</p>
+							<p>6 puri+ aaloo chhole sabji+ achar+ chatuney salad</p>
 							<h5>₹40</h5>
 						</div>
 					</div>
@@ -863,6 +882,7 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!-- ALL PLUGINS -->
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.superslides.min.js"></script>
 	<script src="js/images-loded.min.js"></script>
 	<script src="js/isotope.min.js"></script>
@@ -870,6 +890,30 @@
 	<script src="js/form-validator.min.js"></script>
 	<script src="js/contact-form-script.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			autoplay:true,
+			margin:10,
+			nav:false,
+			dots:true,
+			animateOut:true,
+			responsiveClass:true,
+			autoHeight:true,
+			center:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
+		})		
+	</script>
 </body>
 
 </html>
