@@ -1354,6 +1354,10 @@ blockquote {
 .contact-box {
     padding: 120px 0px;
 }
+.tiffin-note{
+    font-size: 14px;
+    color: darkslategray;
+}
 
 .map-full {
     width: 100%;
