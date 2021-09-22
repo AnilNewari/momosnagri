@@ -18,16 +18,26 @@ function submitForm() {
     var mobile = $("#mobile").val();
     var plan = $("#plan").val();
     var address = $("#address").val();
+    var referredFrom = $("#referredFrom").val();
+    var terms = document.getElementById("terms").checked;
 
     if (mobile.length < 10) {
         alert("Please enter 10 digit mobile number.");
+        return;
+    }
+    if (!plan) {
+        alert("Please select your Tiffin Plan to continue.");
+        return;
+    }
+    if (!terms) {
+        alert("Please accept Foodraj Terms and Conditions to continue.");
         return;
     }
 
     $.ajax({
         type: "POST",
         url: "https://admin.qeedagame.com/api/foodraj/enquiry",
-        data: "name=" + name + "&mobile=" + mobile + "&plan=" + plan + "&address=" + address,
+        data: "name=" + name + "&mobile=" + mobile + "&referredFrom=" + referredFrom + "&plan=" + plan + "&address=" + address,
         success: function (text) {
             if (text == "success") {
                 formSuccess();

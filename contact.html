@@ -133,7 +133,8 @@
 						<h3>● WEIGHT LOSS DIET TIFFIN (₹70 per Tiffin)</h3>
 						<p>Sprouts + Full Salad + Dal/Kadi + Sabji + Roti/Oats/Daliya</p>
 						<!-- <h3>● OFFER: 10% OFF on Monthly Subscription</h3> -->
-						<span class="tiffin-note">Note: Please do pre-payment of 10 days + Rs.300 tiffin security charges for tiffin service.</span>
+						<!-- <span class="tiffin-note">Note: Please do pre-payment of 10 days + Rs.300 tiffin security
+							charges for tiffin service.</span> -->
 					</div>
 					<div class="" style="margin-top: 20px;">
 						<h2>Subscription Form</h2>
@@ -164,7 +165,7 @@
 									<input type="number" placeholder="Your Mobile Number" id="mobile"
 										class="form-control" maxlength="10"
 										oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-										name="name" required data-error="Please enter your mobile number">
+										name="mobile" required data-error="Please enter your mobile number">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -181,9 +182,25 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
+									<input type="number" placeholder="Referral Mobile Number(Optional)"
+										id="referredFrom" class="form-control" maxlength="10"
+										oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+										name="referredFrom" data-error="Please enter referral mobile number">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
 									<textarea class="form-control" id="address" placeholder="Your Address" rows="4"
 										data-error="Enter your complete address" required></textarea>
 									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" id="terms" value="allowed">
+									<label class="form-check-label" for="terms">I agree to the
+										<a data-toggle="modal" data-target="#termsModal" style="color: cadetblue;">
+											Terms and
+											Conditions</a> </label>
 								</div>
 								<div class="submit-button text-center">
 									<button class="btn btn-common" id="submit" type="submit">Subscribe Now</button>
@@ -198,6 +215,72 @@
 		</div>
 	</div>
 	<!-- End Contact -->
+	<!-- Start TandC Modal -->
+	<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="termsModalTitle">Terms and Conditions</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5>Accounts and Payments</h5>
+					<p>&#8226; Customer have to do pre payment for 10 days with the tiffin security charges of
+						₹300(refundable amount)<br>
+						&#8226; Cut-off time to place/cancel/modify orders is 6pm previous day for lunch and 12pm
+						same day for dinner.<br>
+						&#8226; Please call/whatsapp us(9413673457) once to confirm, If we deliver in your area
+						before placing the order.<br>
+						&#8226; Minimum charge per meal is Rs 50 exclusive of delivery charge.<br>
+						&#8226; Foodraj reserves the right to cancel/modify the meals. However, we will try
+						to inform you in advance about the same.
+					</p>
+					<h5>Tiffin Delivery</h5>
+					<p>
+						&#8226; Tiffins will be delivered by Foodraj at your doorstep.<br>
+
+						&#8226; No extra Delivery charges applicable for permanent customer.<br>
+
+						&#8226; Foodraj tiffins delivery partners would drop the customer's meal at the reception /
+						security
+						gate / Common area in case if they are not allowed to enter the building premises.<br>
+
+						&#8226; Kindly check booking history tab to check exact dates of your booked orders.<br>
+
+						&#8226; Meals will be delivered between 12:30 pm to 1:30 pm for lunch and 6:30 to 8:30 pm for
+						dinner.<br>
+
+						&#8226; There will be no lunch delivery on sundays(in offices), heavy rains, riots, or in case
+						of natural disasters<br>
+
+						&#8226; Any discrepancies or complaints related to food will not be entertained by Foodraj
+						Tiffins. We
+						try our best for our customer.<br>
+					</p>
+					<h5>Foodraj Referral Program</h5>
+					<p>
+						&#8226; Refer a friend and get a free tiffin for each successful referral.<br>
+
+						&#8226; Your friend is also get a free tiffin after subscribing a plan.<br>
+
+						&#8226; You are awarded with free tiffins after each referred friend subscribes Foodraj Tiffin
+						service.<br>
+
+						&#8226; Referred customer have to add referral mobile number at the time of filling the Tiffin
+						Subscription form.<br>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">
@@ -249,6 +332,9 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Opening hours</h3>
 					<p><span class="text-color">Mon-Sun :</span> 10:00AM - 11:30PM</p>
+					<p data-toggle="modal" data-target="#termsModal">
+						Terms and
+						Conditions</p> </label>
 
 				</div>
 				<div class="col-lg-3 col-md-6">
