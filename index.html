@@ -70,39 +70,40 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	
+
 
 </head>
+
 <body>
 
 	<!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
+	<div id="fb-root"></div>
 
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+	<!-- Your Chat plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat">
+	</div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "337939787119623");
-      chatbox.setAttribute("attribution", "biz_inbox");
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "337939787119623");
+		chatbox.setAttribute("attribution", "biz_inbox");
 
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v12.0'
+			});
+		};
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-	
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -194,15 +195,15 @@
 	<!-- End slides -->
 
 	<div class="owl-carousel owl-theme owl-section">
-		<img class="item" src="./images/blog-img-01.jpg">
+		<img class="item" src="./images/blog-img-07.jpg">
 		<img class="item" src="./images/blog-img-03.jpg">
 		<img class="item" src="./images/blog-img-04.jpg">
 		<img class="item" src="./images/blog-img-06.jpg">
 		<img class="item" src="./images/blog-img-07.jpg">
 		<img class="item" src="./images/blog-img-08.jpg">
-		<img class="item" src="./images/blog-img-09.jpg">		
+		<img class="item" src="./images/blog-img-09.jpg">
 	</div>
-	
+
 
 	<!-- Start About -->
 	<!-- <div class="about-section-box">
@@ -233,6 +234,16 @@
 					</div>
 				</div> -->
 				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
+					<img src="./images/tiffin-img.jpg" class="service-img">
+					<div class="fr-title">
+						<h2>
+							<a href="contact.html">
+								Subscribe Tiffin
+							</a>
+						</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
 					<img src="./images/thali-img.jpg" class="service-img">
 					<div class="fr-title">
 						<h2>Thali</h2>
@@ -247,15 +258,23 @@
 				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
 					<img src="./images/online-img.jpg" class="service-img">
 					<div class="fr-title">
-						<h2>Online</h2>
+						<!-- <h2>Online</h2> -->
+						<div class="dropdown">
+						<a class="dropdown-toggle order-online-text" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Order Online
+							</a>
+
+
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order">Zomato</a>
+								<a class="dropdown-item" href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642">Swiggy</a>
+							</div>
+						</div>
+
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
-					<img src="./images/tiffin-img.jpg" class="service-img">
-					<div class="fr-title">
-						<h2>Tiffin</h2>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -313,8 +332,10 @@
 							<h5>Full: ₹120</h5>
 							<div class="row" style="justify-content: space-evenly;">
 								<h5>Order On:</h5>
-								<h5><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order" target="_blank">Zomato</a> </h5>
-								<h5><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642" target="_blank">Swiggy</a> </h5>	
+								<h5><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+										target="_blank">Zomato</a> </h5>
+								<h5><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+										target="_blank">Swiggy</a> </h5>
 							</div>
 						</div>
 					</div>
@@ -921,27 +942,27 @@
 	<script src="js/custom.js"></script>
 	<script>
 		$('.owl-carousel').owlCarousel({
-			loop:true,
-			autoplay:true,
-			margin:10,
-			nav:false,
-			dots:true,
-			animateOut:true,
-			responsiveClass:true,
-			autoHeight:true,
-			center:true,
-			responsive:{
-				0:{
-					items:1
+			loop: true,
+			autoplay: true,
+			margin: 10,
+			nav: false,
+			dots: true,
+			animateOut: true,
+			responsiveClass: true,
+			autoHeight: true,
+			center: true,
+			responsive: {
+				0: {
+					items: 1
 				},
-				600:{
-					items:3
+				600: {
+					items: 3
 				},
-				1000:{
-					items:5
+				1000: {
+					items: 5
 				}
 			}
-		})		
+		})
 	</script>
 </body>
 

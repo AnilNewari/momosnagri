@@ -128,7 +128,17 @@ a,
     margin: 0;
     padding: 0;
 }
-
+.order-online-text{
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #1f1f1f;
+    margin: 0;
+    font-size: 22px;
+}
 blockquote {
     margin: 20px 0 20px;
     padding: 30px;
