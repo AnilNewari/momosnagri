@@ -78,7 +78,7 @@ function showSuccessModal(isError, msg){
      $("#successModalLabel").attr("style","color:black");
     }
     $("#modal-message").text(msg);
-    // $('#successModal').modal('show');
+    $('#successModal').modal('show');
 }
 
 function formSuccess() {
