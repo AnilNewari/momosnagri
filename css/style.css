@@ -524,6 +524,31 @@ Owl carousel
     bottom: 0px;
 }
 
+.text-zomato{
+    border: antiquewhite;
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+    font-size: 20px !important;
+    border-radius: 4px;
+    background: #ED4F5F;
+}
+.text-swiggy{
+    border: antiquewhite;
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+    font-size: 20px !important;
+    border-radius: 4px;
+    background: #F1803A;
+}
+.a-zomato{
+    color: white!important;
+}
+.a-swiggy{
+    color: white!important;
+}
+
 /*------------------------------------------------------------------
     Gallery
 -------------------------------------------------------------------*/

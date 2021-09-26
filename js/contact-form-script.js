@@ -22,15 +22,23 @@ function submitForm() {
     var terms = document.getElementById("terms").checked;
 
     if (mobile.length < 10) {
-        alert("Please enter 10 digit mobile number.");
+        showSuccessModal(true, "Please enter 10 digit mobile number.");
+        formError();
         return;
     }
     if (!plan) {
-        alert("Please select your Tiffin Plan to continue.");
+        showSuccessModal(true,  "Please select your Tiffin Plan to continue.")
+        formError();
+        return;
+    }
+    if (referredFrom&&referredFrom.length < 10) {
+        showSuccessModal(true, "Please enter correct referral mobile number.");
+        formError();
         return;
     }
     if (!terms) {
-        alert("Please accept Foodraj Terms and Conditions to continue.");
+        showSuccessModal(true, "Please accept Foodraj Terms and Conditions to continue.");
+        formError();
         return;
     }
 
@@ -40,13 +48,29 @@ function submitForm() {
         data: "name=" + name + "&mobile=" + mobile + "&referredFrom=" + referredFrom + "&plan=" + plan + "&address=" + address,
         success: function (text) {
             if (text == "success") {
-                formSuccess();
+                //formSuccess();
+                showSuccessModal(false, "Submitted successfully! Our representative will call you within 12 hours.");
             } else {
                 formError();
-                submitMSG(false, "Something went wrong! Try again later.");
+                showSuccessModal(true, text);
+                //submitMSG(false, "Something went wrong! Try again later.");
             }
         }
     });
+}
+
+function showSuccessModal(isError, msg){
+    console.log('msg', msg);
+    if(isError){
+     $("#successModalLabel").text("Error");
+     $("#successModalLabel").attr("style","color:red");
+    }else{
+    $("#contactForm")[0].reset();
+     $("#successModalLabel").text("Success");
+     $("#successModalLabel").attr("style","color:black");
+    }
+    $("#modal-message").text(msg);
+    // $('#successModal').modal('show');
 }
 
 function formSuccess() {
