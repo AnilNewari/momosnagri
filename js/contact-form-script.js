@@ -26,6 +26,7 @@ function submitForm() {
     var address = $("#address").val();
     var referredFrom = $("#referredFrom").val();
     var terms = document.getElementById("terms").checked;
+    $("#modal-message").text("Loading...");
 
     if (mobile.length < 10) {
         showSuccessModal(true, "Please enter 10 digit mobile number.");
