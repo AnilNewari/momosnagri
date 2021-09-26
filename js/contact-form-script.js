@@ -1,3 +1,9 @@
+let params = new URLSearchParams(document.location.search.substring(1));
+var refCode = params.get("refCode");
+//console.log('refCode', refCode);
+if(refCode){
+    document.getElementById('referredFrom').value = Number(refCode)
+}
 $("#contactForm")
     .validator()
     .on("submit", function (event) {
@@ -45,6 +51,7 @@ function submitForm() {
     $.ajax({
         type: "POST",
         url: "https://admin.qeedagame.com/api/foodraj/enquiry",
+        //url: "http://localhost:1337/api/foodraj/enquiry",
         data: "name=" + name + "&mobile=" + mobile + "&referredFrom=" + referredFrom + "&plan=" + plan + "&address=" + address,
         success: function (text) {
             if (text == "success") {

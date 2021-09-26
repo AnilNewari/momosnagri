@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Foodraj Rferral Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/gif" sizes="16x16">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+</head>
+
+<body style="background-color: black;">
+    <div class="container-fluid">
+        <div style="text-align: center; margin-top: 10px;">
+            <!-- <img src="assets/pm_logo.png" width="100px"> -->
+            <span class="title">Foodraj Referral Program</span>
+        </div>
+        <div class="top-form" id="top-form">
+            <div>
+                <input class="form-control" type="text" id="code" placeholder="Enter mobile number" autocomplete="off">
+            </div>
+            <div class="btn-submit">
+                <button type="submit" class="btn btn-primary" onclick="getTrackerData()">Submit</button>
+            </div>
+        </div>
+        <div class="text-center m-2">
+            <div class="spinner-grow text-light" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="alert alert-danger d-flex align-items-center" role="alert" id="alert-div"
+            style="display: none !important">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div id="alert-content">
+            </div>
+        </div>
+        <div class="pari-content mb-4 text-center" id="pari-content">
+            <a href="https://affpros.net/?serial=6945&creative_id=382&anid=newari103" target="_blank">
+                <img src="assets/food_bnr.jpg" alt="pm" class="img-fluid" style="align-self: center;">
+            </a>
+            <!-- <iframe width="720" height="400" frameborder="0" allowfullscreen="1" class="img-fluid"
+                src="https://www.youtube.com/embed/QkcAgjga3cg?controls=0">
+            </iframe> -->
+            <div class="accordion col-md-6 col-xs-12" id="accordionExample" style="text-align: left;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What is Foodraj Tiffin Referral Program?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can get a free tiffin for referring Foodraj tiffins every time.
+                            Foodraj referral Program is the best way to earn Free Tiffins at your doorstep.
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Parimatch Referral Program से कितना कमीशन मिलेगा?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Parimatch Referral Program</strong> से जुड़कर प्रत्येक रेजिस्ट्रेशन एवं न्यूनतम
+                            डिपॉज़िट (551/-) पर आपको 1500/- से अधिक तक का कमीशन दिया जाएगा।
+                        </div>
+                    </div>
+                </div> -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How to join this program?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can join this program after subscribing Foodraj Tiffin Plan or Contact us at: 9783680668
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                            What are the Foodraj tiffin plans?
+                        </button>
+                    </h2>
+                    <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            At present we have two plans.<br>
+                                1. REGULAR TIFFIN (₹60 per Tiffin)<br>
+                                Sabji + Dal/Kadi/Boondi Raita + Butter Roti/Rice + Salad<br>
+                                2. WEIGHT LOSS DIET TIFFIN (₹70 per Tiffin)<br>
+                                Sprouts + Full Salad + Dal/Kadi + Sabji + Roti/Oats/Daliya<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                            Is there any advanced payment to subscribe Foodraj tiffins?
+                        </button>
+                    </h2>
+                    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes, Customer have to do pre payment for 10 days with the tiffin security charges of ₹300(refundable amount).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Is there any limit?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No, you can earn unlimited tiffins.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How to share it with my friends?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Share the tiffin subscription form lin with friends and your friends have to add your mobile number at the time of filling the Tiffin Subscription form.
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            What are the withdrawal methods for Parimatch?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Parimatch supports over a dozen payment systems, including one that is popular with Indian
+                            players.You can withdraw winnings with
+                            Bank Account, Paytm, UPI, Bank cards, Webmoney, Skrill, Neteller, Sticpay, EcoPayz, Ecobank
+                            etc.
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            What is minimum withdrawal amount for Parimatch?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Minimum withdrawal for parimatch is Rs 1000/-.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="profile" class="profile">
+        </div>
+        <div id="detail" class="mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Referral
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="registration">0</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Subscriber
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="subscriberCount">0</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card border-success">
+                        <div class="card-header">
+                            Your Free Tiffin
+                        </div>
+                        <div class="card-body">
+                            <!-- <h2 class="card-text" id="freeTiffin">&#8377; 0</h2> -->
+                            <h2 class="card-text" id="freeTiffin">0</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Your Delivered Tiffin
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="deliveredTiffin">0</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Your Remaining Tiffin 
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="remainingTiffin">0</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4" style="text-align: center; display: none;" id="logoutBtn">
+            <button class="btn btn-primary" onclick="logOut()">Logout</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //console.log('js called');
+        //callApi("http://localhost:1337/api/qeeda/ads/campaign");
+        var spinner = document.getElementById("spinner");
+        var alertDiv = document.getElementById("alert-div");
+        var detail = document.getElementById("detail");
+        var profile = document.getElementById("profile");
+        var pariContent = document.getElementById("pari-content");
+        var logoutBtn = document.getElementById("logoutBtn");
+        var topForm = document.getElementById("top-form");
+        //topForm.style.display = "none";
+
+
+        var savedCode = localStorage.getItem("code");
+        console.log('savedCode', savedCode);
+        if (savedCode) {
+            pariContent.style.display = "none";
+            spinner.style.display = "inline-block";
+            detail.style.display = "none";
+            profile.style.display = "none";
+            topForm.style.display = "none";
+            alertDiv.setAttribute('style', 'display: none !important');
+            callApi(savedCode);
+        }
+        function getTrackerData() {
+            let code = document.getElementById("code").value;
+            spinner.style.display = "inline-block";
+            detail.style.display = "none";
+            profile.style.display = "none";
+            alertDiv.setAttribute('style', 'display: none !important');
+            if (!code) {
+                spinner.style.display = "none";
+                alert('Code is required!');
+                return;
+            }
+            console.log('code', code);
+            callApi(code);
+        }
+        async function callApi(code) {
+            var url = "https://admin.qeedagame.com/api/foodraj/tracker/" + code
+            //var url = "http://localhost:1337/api/foodraj/tracker/" + code
+            try {
+                var response = await fetch(url);
+            } catch (error) {
+                spinner.style.display = "none";
+                alert(error)
+                return;
+            }
+            console.log('response', response);
+            spinner.style.display = "none";
+            if (!response) {
+                alert("Server error, Try again later")
+                return;
+            }
+            var respData = await response.json();
+            if (respData.code && respData.code == "Error") {
+                //alert("" + respData.message);
+                alertDiv.style.display = "block";
+                document.getElementById("alert-content").innerHTML = respData.message;
+                return;
+            }
+            //console.log('data', respData);
+            showData(respData);
+
+        }
+        function showData(data) {
+            topForm.style.display = "none";
+            pariContent.style.display = "none";
+            localStorage.setItem("code", data.phone);
+            var date = new Date(data.createdAt);
+            var jDate = date.toString();
+            var newDate = formatDate(jDate);
+
+            let item = `<div class="card col-md-6 col-xs-12 p-2">
+                <h6>Name: ${data.name}</h6>
+                <h6>Mobile: ${data.phone}</h6>
+                <h6>Tiffin Plan: ${data.plan}</h6>
+                <h6>Subscription Status: ${data.isSubscribed?"Subscribed":"Pending"}</h6>
+                <h6>Address: ${data.address}</h6>
+                <h6>Joining Date: ${newDate}</h6>
+                <h6>
+                    Subscription Link : 
+                        <input type="text" value='https://foodraj.in/contact.html?refCode=${data.phone}' id="rc" readonly class="link-input">
+                        <div class="open-link">
+                            <a href='https://foodraj.in/contact.html?refCode=${data.phone}' style="margin-left:20px"
+                            target="_blank" class="open-link-btn">Open</a>
+                                <button class="btn btn-primary btn-sm" onclick="copyLink()" style="margin-left:10px">Copy</button><span id="cpd"
+                                    style="display: none; margin-left:10px">Copied!</span>
+                        </div>
+                </h6>
+            </div>`;
+            document.getElementById("profile").innerHTML = item;
+            profile.style.display = "block";
+            document.getElementById("registration").innerHTML = data.referredCount ? data.referredCount : 0;
+            document.getElementById("subscriberCount").innerHTML = data.subscriberCount ? data.subscriberCount : 0;
+            document.getElementById("freeTiffin").innerHTML = `${data.subscriberCount ? data.subscriberCount : 0}`;
+            document.getElementById("deliveredTiffin").innerHTML = `${data.deliveredTiffin}`;
+            document.getElementById("remainingTiffin").innerHTML = `${data.subscriberCount - data.deliveredTiffin}`;
+            detail.style.display = "block";
+            logoutBtn.style.display = "block";
+
+
+        }
+
+        function formatDate(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;
+
+            return [day, month, year].join('-');
+        }
+
+        function logOut() {
+            localStorage.removeItem("code");
+            logoutBtn.style.display = "none";
+            topForm.style.display = "flex";
+            pariContent.style.display = "flex";
+            detail.style.display = "none";
+            profile.style.display = "none";
+        }
+
+        function copyLink() {
+            /* Get the text field */
+            var copyText = document.getElementById("rc");
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            /* Alert the copied text */
+            document.getElementById("cpd").style.display = "inline-block"
+            // alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

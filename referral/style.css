@@ -1,0 +1,40 @@
+.title {
+    color: #f3f74f;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+.top-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.btn-submit {
+    margin-left: 10px;
+}
+.pari-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile {
+    /* display: flex;
+    justify-content: center; */
+}
+.open-link {
+    margin-top: 6px;
+    margin-left: 60px;
+}
+.open-link-btn {
+    margin-left: 20px;
+    border: 1px solid #0d6efd;
+    padding: 4px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.link-input{
+    width: 60% !important;
+}
