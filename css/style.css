@@ -410,9 +410,23 @@ Owl carousel
 .owl-section .item{
     background-color: #cd542d;
     border-radius: 8px;
-    height: 300px;
-    width: 150px;
+    height: 330px;
 }
+
+.tiffin-plan{
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+    width: auto;
+    white-space: nowrap;
+    
+}
+.tiffin-plan-img{
+    width: 250px;
+    height: 150px;
+}
+.tiffin-plan::-webkit-scrollbar {
+    display: none;
+  }
 
 /*------------------------------------------------------------------
     Menu

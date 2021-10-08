@@ -73,6 +73,30 @@
 
 
 </head>
+<script>
+	(function (w, d, s, u) {
+		w.gbwawc = {
+			url: u,
+			options: {
+				waId: "+919413673457",
+				siteName: "Foodraj",
+				siteTag: "Subscribe Tiffin Service",
+				siteLogo: "https://s.qeeda.in/cmn/foodraj-logo-1633713455440.png",
+				widgetPosition: "RIGHT",
+				triggerMessage: "",
+				welcomeMessage: "Welcome to Foodraj- The Taste of Rajasthan",
+				brandColor: "#25D366",
+				messageText: "I am looking for",
+				replyOptions: ['Tiffin Service', 'Online Food Order', 'Tiffin Referral Program'],
+			},
+		};
+		var h = d.getElementsByTagName(s)[0],
+			j = d.createElement(s);
+		j.async = true;
+		j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+		h.parentNode.insertBefore(j, h);
+	})(window, document, "script", "https://waw.gallabox.com");
+</script>
 
 <body>
 
@@ -83,7 +107,7 @@
 	<div id="fb-customer-chat" class="fb-customerchat">
 	</div>
 
-	<script>
+	<!-- <script>
 		var chatbox = document.getElementById('fb-customer-chat');
 		chatbox.setAttribute("page_id", "337939787119623");
 		chatbox.setAttribute("attribution", "biz_inbox");
@@ -102,7 +126,7 @@
 			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script> -->
 
 	<!-- Start header -->
 	<header class="top-navbar">
@@ -235,54 +259,59 @@
 					</div>
 				</div> -->
 				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
-					<img src="./images/tiffin-img.jpg" class="service-img">
-					<div class="fr-title">
-						<h2>
-							<a href="contact.html">
+					<a href="contact.html">
+						<img src="./images/tiffin-img.jpg" class="service-img">
+						<div class="fr-title">
+							<h2>
 								Subscribe Tiffin
-							</a>
-						</h2>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
-					<img src="./images/thali-img.jpg" class="service-img">
-					<div class="fr-title">
-						<h2>Thali</h2>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
-					<img src="./images/take-away-img.jpg" class="service-img">
-					<div class="fr-title">
-						<h2>Take Away</h2>
-					</div>
+							</h2>
+						</div>
+					</a>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
 					<img src="./images/online-img.jpg" class="service-img">
 					<div class="fr-title">
 						<!-- <h2>Online</h2> -->
 						<div class="dropdown">
-						<a class="dropdown-toggle order-online-text" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
+							<a class="dropdown-toggle order-online-text" href="#" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Order Online
 							</a>
-
-
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order" target="_blank" >Zomato</a>
-								<a class="dropdown-item" href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642" target="_blank">Swiggy</a>
+								<a class="dropdown-item"
+									href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+									target="_blank">Zomato</a>
+								<a class="dropdown-item"
+									href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+									target="_blank">Swiggy</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
-
+				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
+					<a href="https://www.google.com/maps/place/Foodraj-+The+Taste+of+Rajasthan/@26.8956588,75.7706325,15z/data=!4m5!3m4!1s0x0:0x42b4bbf473731ed7!8m2!3d26.8956588!4d75.7706325"
+						target="_blank">
+						<img src="./images/thali-img.jpg" class="service-img">
+						<div class="fr-title">
+							<h2>Take Away</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 fr-service">
+					<a href="referral/index.html" target="_blank">
+						<img src="./images/refer-earn.png" class="service-img">
+						<div class="fr-title">
+							<h2>Refer Tiffin</h2>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End About -->
 
 	<!-- Start QT -->
-	<div class="qt-box qt-background">
+	<!-- <div class="qt-box qt-background">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-left">
@@ -293,7 +322,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- End QT -->
 
 	<!-- Start Menu -->
@@ -333,9 +362,11 @@
 							<h5>Full: ₹120</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -354,9 +385,11 @@
 							<h5>Full: ₹140</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -372,9 +405,11 @@
 							<h5>Full: ₹140</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -389,9 +424,11 @@
 							<h5>Full: ₹140</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -406,9 +443,11 @@
 							<h5>Full: ₹150</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -423,9 +462,11 @@
 							<h5>Full: ₹150</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -440,9 +481,11 @@
 							<h5>Full: ₹140</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -457,9 +500,11 @@
 							<h5>Full: ₹180</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -474,9 +519,11 @@
 							<h5>Full: ₹150</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -491,9 +538,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -508,9 +557,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -525,9 +576,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -542,9 +595,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -559,9 +614,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -576,9 +633,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -593,9 +652,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -610,9 +671,11 @@
 							<h5>Full: ₹90</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -627,9 +690,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -644,9 +709,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -661,9 +728,11 @@
 							<h5>Full: ₹70</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -678,9 +747,11 @@
 							<h5>Full: ₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -695,9 +766,11 @@
 							<h5>Full: ₹90</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -711,9 +784,11 @@
 							<h5>₹6</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -727,9 +802,11 @@
 							<h5>₹8</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -743,9 +820,11 @@
 							<h5>₹80</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -759,9 +838,11 @@
 							<h5>₹60</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -775,9 +856,11 @@
 							<h5>₹70</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -791,9 +874,11 @@
 							<h5>₹40</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -807,9 +892,11 @@
 							<h5>₹50</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -823,9 +910,11 @@
 							<h5>₹40</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -839,9 +928,11 @@
 							<h5>₹40</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -864,9 +955,11 @@
 							<h5>₹50</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -880,9 +973,11 @@
 							<h5>₹50</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -896,9 +991,11 @@
 							<h5>₹30</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -912,9 +1009,11 @@
 							<h5>₹20</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -928,9 +1027,11 @@
 							<h5>₹20</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -946,9 +1047,11 @@
 							<h5 style="padding-bottom: 0px;">₹40</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -963,9 +1066,11 @@
 							<h5 style="padding-bottom: 0px;">₹40</h5>
 							<div class="row" style="justify-content: space-around;">
 								<h5>Order On:</h5>
-								<h5 class="text-zomato"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+								<h5 class="text-zomato"><a
+										href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
 										target="_blank" class="a-zomato">Zomato</a> </h5>
-								<h5 class="text-swiggy"><a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+								<h5 class="text-swiggy"><a
+										href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
 										target="_blank " class="a-swiggy">Swiggy</a> </h5>
 							</div>
 						</div>
@@ -1094,12 +1199,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<i class="fa fa-volume-control-phone"></i>
+					<a href="https://api.whatsapp.com/message/GEBFTTHGVJ55G1" target="_blank">
+						<i class="fa fa-volume-control-phone"></i>
+					</a>
 					<div class="overflow-hidden">
 						<h4>Phone</h4>
-						<p class="lead">
-							9783680668
-						</p>
+						<a href="https://api.whatsapp.com/message/GEBFTTHGVJ55G1">
+							<p class="lead">
+								9413673457
+							</p>
+						</a>
+
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1112,7 +1222,10 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<i class="fa fa-map-marker"></i>
+					<a
+						href="https://www.google.com/maps/place/Foodraj-+The+Taste+of+Rajasthan/@26.8956588,75.7706325,15z/data=!4m5!3m4!1s0x0:0x42b4bbf473731ed7!8m2!3d26.8956588!4d75.7706325">
+						<i class="fa fa-map-marker"></i>
+					</a>
 					<div class="overflow-hidden">
 						<h4>Location</h4>
 						<p class="lead">
@@ -1139,13 +1252,18 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Opening hours</h3>
 					<p><span class="text-color">Mon-Sun :</span> 10:00AM - 11:30PM</p>
-					<p><span class="text-color"><a href="referral/index.html" target="_blank"> Tiffin Referral Program </a></p>
+					<p><span class="text-color"><a href="referral/index.html" target="_blank"> Tiffin Referral Program
+							</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Services</h3>
-					<p class="lead" ><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order" target="_blank">Zomato</a></p>
-					<p class="lead"> <a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642" target="_blank">Swiggy</a></p>
-					<p class="lead">Take Away </p>
+					<p class="lead"><a href="https://www.zomato.com/jaipur/foodraj-the-taste-of-rajasthan-sodala/order"
+							target="_blank">Zomato</a></p>
+					<p class="lead"> <a href="https://www.swiggy.com/restaurants/foodraj-sodala-jaipur-167642"
+							target="_blank">Swiggy</a></p>
+					<p class="lead"><a
+							href="https://www.google.com/maps/place/Foodraj-+The+Taste+of+Rajasthan/@26.8956588,75.7706325,15z/data=!4m5!3m4!1s0x0:0x42b4bbf473731ed7!8m2!3d26.8956588!4d75.7706325"
+							target="_blank">Take Away</a> </p>
 					<p class="lead"><a href="contact.html">Tiffin Subscription</a> </p>
 				</div>
 				<div class="col-lg-3 col-md-6">
@@ -1159,7 +1277,8 @@
 						</form>
 					</div> -->
 					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="https://www.facebook.com/foodrajcafe" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<li class="list-inline-item"><a href="https://www.facebook.com/foodrajcafe" target="_blank"><i
+									class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
@@ -1188,7 +1307,7 @@
 	</footer>
 	<!-- End Footer -->
 
-	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+	<!-- <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a> -->
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery-3.2.1.min.js"></script>
