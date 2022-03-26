@@ -514,7 +514,7 @@ Owl carousel
 }
 .why-text h4 {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     font-family: "Arbutus Slab", serif;
 }
@@ -524,7 +524,7 @@ Owl carousel
     border-bottom: 1px dashed #010101;
     margin: 0px;
     padding-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 4px;
     margin-bottom: 15px;
 }
 .why-text h5 {
